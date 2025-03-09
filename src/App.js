@@ -1,11 +1,14 @@
+import { BrowserRouter as Router } from "react-router-dom";
 import './index.css';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Teste tailwind</h1>
-    </div>
+    <Router>
+      <Header />
+    </Router>
   );
 }
 
 export default App;
+  

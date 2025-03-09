@@ -30,7 +30,7 @@ function MobHeader() {
 
       <div
         className={`fixed top-0 left-0 h-full w-[60%] max-w-sm bg-white shadow-md transform ${showMenu ? "translate-x-0" : "-translate-x-full"
-          } transition-transform duration-300 ease-in-out z-20 p-5`}
+          } transition-transform duration-300 ease-in-out z-20 p-5 font-rubik`}
       >
         {/* Ícone de fechar */}
         <IoMdClose

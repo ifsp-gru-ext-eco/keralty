@@ -1,4 +1,4 @@
-
+import { BiLogoWhatsapp } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import keralty from '../images/keralty.png';
 function Footer(){
@@ -25,8 +25,13 @@ function Footer(){
                 </div>
             </div>
             <div className="flex-1 mt-4 lg:mt-0">
-                <div className="flex">
+                <div className="flex justify-center items-center">
                     <img alt="Icon keralty" src={keralty} className='w-auto'></img>
+                </div>
+                <div className="flex ">
+                    <div className="flex items-center justify-center">
+                        <BiLogoWhatsapp />
+                    </div>
                 </div>
             </div>
         </div>

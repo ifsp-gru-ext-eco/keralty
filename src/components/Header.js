@@ -20,6 +20,12 @@ function Header(){
                     >
                       Sobre nós
                     </Link>
+                    <Link
+                      to="/"
+                      className="text-2xl hover:text-primary transition ease-in-out text-second "
+                    >
+                      Contatos
+                    </Link>
         
                   </div>
                 </div>

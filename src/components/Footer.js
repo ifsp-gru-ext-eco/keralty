@@ -1,6 +1,9 @@
 import { BiLogoWhatsapp } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import keralty from '../images/keralty.png';
+import { BiLogoInstagram } from "react-icons/bi";
+import { BiLogoGmail } from "react-icons/bi";
+
 function Footer(){
 
     return(
@@ -24,13 +27,18 @@ function Footer(){
                     </ul>
                 </div>
             </div>
-            <div className="flex-1 mt-4 lg:mt-0">
+            <div className="flex-1 flex justify-evenly items-center mt-4 lg:mt-0 flex-col lg:flex-row">
                 <div className="flex justify-center items-center">
                     <img alt="Icon keralty" src={keralty} className='w-auto'></img>
                 </div>
-                <div className="flex ">
+                <div className="flex flex-col items-center justify-evenly">
                     <div className="flex items-center justify-center">
-                        <BiLogoWhatsapp />
+                        <BiLogoWhatsapp className="text-green-100 hover:text-green-200 transition cursor-pointer" size={30} />
+                        <BiLogoInstagram size={30} className="text-green-100 hover:text-[#e95950] transition cursor-pointer" />
+                        <BiLogoGmail size={30} className="text-green-100 hover:text-red-800 transition cursor-pointer"/>
+                    </div>
+                    <div className="mt-3">
+                        <a href="arrumar-aqui"><button className="border p-2 pr-8 pl-8 rounded-full border-primary text-white font-rubik cursor-pointer hover:bg-white hover:text-primary bg-primary transition">Conecte-se!</button></a>
                     </div>
                 </div>
             </div>

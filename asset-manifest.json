@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/keralty/static/css/main.777c9060.css",
-    "main.js": "/keralty/static/js/main.c190d285.js",
+    "main.js": "/keralty/static/js/main.5e9a2d55.js",
     "static/media/homem-sentado.png": "/keralty/static/media/homem-sentado.0da31749a709065b051d.png",
     "static/media/logo-keralty.png": "/keralty/static/media/logo-keralty.7d0fef43177307109c5e.png",
     "static/media/keralty.png": "/keralty/static/media/keralty.2d31a430bab1175883fe.png",
     "index.html": "/keralty/index.html",
     "main.777c9060.css.map": "/keralty/static/css/main.777c9060.css.map",
-    "main.c190d285.js.map": "/keralty/static/js/main.c190d285.js.map"
+    "main.5e9a2d55.js.map": "/keralty/static/js/main.5e9a2d55.js.map"
   },
   "entrypoints": [
     "static/css/main.777c9060.css",
-    "static/js/main.c190d285.js"
+    "static/js/main.5e9a2d55.js"
   ]
 }

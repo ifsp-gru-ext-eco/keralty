@@ -10,7 +10,7 @@ function App() {
       <Header />
       <MobHeader />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/keralty/" element={<Home />} />
       </Routes>
       <Footer />
     </Router>

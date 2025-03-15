@@ -41,7 +41,7 @@ function MobHeader() {
         {/* Menu */}
         <h1 className="font-roboto-slab font-bold text-[25px] mb-4">Menu</h1>
         <Link
-          to="/"
+          to="/keralty/"
           className="block text-lg hover:text-primary transition ease-in-out text-second font-rubik mb-3"
           onClick={() => setShowMenu(false)}
         >

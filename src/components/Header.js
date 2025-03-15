@@ -15,7 +15,7 @@ function Header() {
                 <div className="flex justify-center items-center">
                     <div className="flex justify-evenly font-rubik w-full max-w-lg p-3 min-w-[500px] rounded-full items-center border-[2px] border-second gap-10">
                         <Link
-                            to="/"
+                            to="/keralty/"
                             className="text-2xl hover:text-primary transition ease-in-out text-second"
                         >
                             Home

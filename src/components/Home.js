@@ -4,7 +4,8 @@ import { useEffect } from "react";
 import Cards from './Cards.js'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import About from './About.js';
+import Testimonials from './Testimonials.js';
 function Home(){
  useEffect(() => {
     AOS.init();
@@ -21,6 +22,8 @@ function Home(){
                 <img data-aos="fade-left" data-aos-duration="1500" alt='Homem sentado sorrindo' className='w-[40%] lg:w-[70%] overflow-hidden  object-cover max-w-full max-h-full' src={homem}></img>
             </div>
         </div>
+        <About />
+        <Testimonials />
         <Cards />
         </div>
     );

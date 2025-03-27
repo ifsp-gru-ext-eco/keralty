@@ -9,7 +9,7 @@ function About() {
   }, []);
 
   return (
-    <div className="bg-gray-100 py-16 px-5 flex flex-col lg:flex-row items-center justify-center">
+    <div id="about" className="bg-gray-100 py-16 px-5 flex flex-col lg:flex-row items-center justify-center">
       {/* Texto */}
       <div className="lg:w-1/2 text-center lg:text-left" data-aos="fade-right" data-aos-duration="1000">
         <h2 className="text-4xl font-bold text-primary mb-4">Sobre a ONG Keralty</h2>
@@ -22,9 +22,9 @@ function About() {
           Nossos voluntários atuam levando conforto, arte e música a hospitais e
           lares de idosos, criando uma rede de carinho e apoio.
         </p>
-        <button className="bg-primary text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
+        <a href="https://www.atados.com.br/ong/associacao-keralty" rel="noreferrer" target="_blank"><button className="bg-primary text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
           Saiba Mais
-        </button>
+        </button></a>
       </div>
 
       {/* Imagem */}

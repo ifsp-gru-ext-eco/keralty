@@ -1,7 +1,14 @@
-import { Link } from "react-router-dom";
 import logo from '../images/logo-keralty.png';
 
 function Header() {
+    // Função para rolar suavemente até uma seção
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <div className="fixed top-0 left-0 w-full bg-white z-10 shadow-md flex justify-center h-20">
             <div className="container hidden lg:flex justify-evenly items-center px-6 py-4">
@@ -11,27 +18,30 @@ function Header() {
                     <img data-aos="fade-right" data-aos-duration="1000" alt="Logo Keralty" src={logo} />
                 </div>
 
-                {/* Menu Centralizado com mais espaço entre os links */}
+                {/* Menu Centralizado */}
                 <div className="flex justify-center items-center">
-                    <div className="flex justify-evenly font-rubik w-full max-w-lg p-3 min-w-[500px] rounded-full items-center border-[2px] border-second gap-10">
-                        <Link
-                            to="/keralty/"
+                    <div className="flex justify-evenly font-rubik w-full max-w-lg p-3 min-w-[500px] rounded-full items-center border-second gap-10">
+                        <a 
+                            href="#home" 
                             className="text-2xl hover:text-primary transition ease-in-out text-second"
+                            onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
                         >
                             Home
-                        </Link>
-                        <Link
-                            to="/"
+                        </a>
+                        <a 
+                            href="#about" 
                             className="text-2xl hover:text-primary transition ease-in-out text-second"
+                            onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
                         >
                             Sobre nós
-                        </Link>
-                        <Link
-                            to="/"
+                        </a>
+                        <a 
+                            href="#contact" 
                             className="text-2xl hover:text-primary transition ease-in-out text-second"
+                            onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
                         >
                             Contatos
-                        </Link>
+                        </a>
                     </div>
                 </div>
 

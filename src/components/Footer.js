@@ -1,11 +1,15 @@
 import { BiLogoWhatsapp } from "react-icons/bi";
-import { Link } from "react-router-dom";
 import keralty from '../images/keralty.png';
 import { BiLogoInstagram } from "react-icons/bi";
 import { BiLogoGmail } from "react-icons/bi";
 
 function Footer(){
-
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     return(
         <div className="flex flex-col ">
         <div className="flex lg:p-5 flex-col lg:flex-row bg-third items-center justify-evenly p-5">
@@ -13,20 +17,13 @@ function Footer(){
                 <div>
                     <h2 className="text-2xl text-white font-bold font-rubik">Navegue</h2>
                     <ul>
-                        <li><Link to="" className="text-1xl hover:text-fourth transition text-white font-rubik">Home</Link></li>
-                        <li><Link to="" className="text-1xl hover:text-fourth transition text-white font-rubik">Sobre nós</Link></li>
-                        <li><Link to="" className="text-1xl hover:text-fourth transition text-white font-rubik">Contatos</Link></li>
+                        <li><a href="#home" className="text-1xl hover:text-fourth transition text-white font-rubik" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Home</a></li>
+                        <li><a href="#about" className="text-1xl hover:text-fourth transition text-white font-rubik" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>Sobre nós</a></li>
+                        <li><a href="#contact" className="text-1xl hover:text-fourth transition text-white font-rubik" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contatos</a></li>
                     </ul>
                 </div>
 
-                <div className="mt-4 lg:mt-0">
-                    <h2 className="text-2xl text-white font-bold font-rubik">Causas</h2>
-                    <ul>
-                        <li><Link to="" className="text-1xl hover:text-fourth transition text-white font-rubik">Políticas Públicas</Link></li>
-                        <li><Link to="" className="text-1xl hover:text-fourth transition text-white font-rubik">Cidadania</Link></li>
-                        <li><Link to="" className="text-1xl hover:text-fourth transition text-white font-rubik">Saúde e bem-estar</Link></li>
-                    </ul>
-                </div>
+                
             </div>
             <div className="flex-1 flex justify-evenly items-center mt-4 lg:mt-0 flex-col lg:flex-row">
                 <div className="flex justify-center items-center">
@@ -38,9 +35,9 @@ function Footer(){
                         <a rel="noreferrer" target="_blank" href="https://www.instagram.com/associacaokeralty/"><BiLogoInstagram size={30} className="text-green-100 hover:text-[#e95950] transition cursor-pointer" /></a>
                         <a rel="noreferrer" target="_blank" href="mailto:associacao@keralty.com"><BiLogoGmail size={30} className="text-green-100 hover:text-red-800 transition cursor-pointer"/></a>
                     </div>
-                    <div className="mt-3">
+                    {/* <div className="mt-3">
                         <a rel="noreferrer" href="arrumar-aqui"><button className="border p-2 pr-8 pl-8 rounded-full border-primary text-white font-rubik cursor-pointer hover:bg-white hover:text-primary bg-primary transition">Conecte-se!</button></a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

@@ -1,11 +1,18 @@
 import { IoIosMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import AOS from 'aos';
 
 function MobHeader() {
+
   const [showMenu, setShowMenu] = useState(false);
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    }
+};
 
   useEffect(() => {
     AOS.init();
@@ -40,27 +47,26 @@ function MobHeader() {
 
         {/* Menu */}
         <h1 className="font-roboto-slab font-bold text-[25px] mb-4">Menu</h1>
-        <Link
-          to="/keralty/"
+        <a
+          href="#home"
           className="block text-lg hover:text-primary transition ease-in-out text-second font-rubik mb-3"
-          onClick={() => setShowMenu(false)}
+          onClick={(e) => { e.preventDefault(); scrollToSection('home'); setShowMenu(false);}}
         >
           Home
-        </Link>
-        <Link
-          to="/contato"
+        </a>
+        <a
+          href="#about"
           className="block text-lg hover:text-primary transition ease-in-out text-second font-rubik mb-3"
-          onClick={() => setShowMenu(false)}
+          onClick={(e) => { e.preventDefault(); scrollToSection('about'); setShowMenu(false);}}
         >
           Sobre nós
-        </Link>
-        <Link
-          to="/produtos"
+        </a>
+        <a
+          href="#contact"
           className="block text-lg hover:text-primary transition ease-in-out text-second font-rubik"
-          onClick={() => setShowMenu(false)}
-        >
+          onClick={(e) => { e.preventDefault(); scrollToSection('contact'); setShowMenu(false);}}        >
           Contatos
-        </Link>
+        </a>
       </div>
     </div>
   );

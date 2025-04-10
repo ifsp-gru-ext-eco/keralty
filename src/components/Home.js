@@ -13,7 +13,7 @@ function Home(){
     }, [])
 
     return(
-        <div className='flex flex-col'>
+        <div className='flex flex-col overflow-hidden'>
         <div className="w-full lg:h-screen bg-white flex lg:flex-row flex-col justify-evenly ">
             <div className="flex-1 flex flex-col p-5  items-center justify-center" id="home">
                 <img data-aos="fade-right" data-aos-duration="1000" alt='Logo Keralty' src={logo} ></img>

@@ -4,7 +4,7 @@ import homem from '../../images/homem-sentado.png'
 function Initial(){
     return(
 
-        <div className="w-full lg:h-home bg-white flex lg:flex-row flex-col justify-evenly ">
+        <div className="w-full lg:h-home bg-slate-100 flex lg:flex-row flex-col justify-evenly ">
         <div className="flex-1 flex flex-col p-5  items-center justify-center">
             <img data-aos="fade-right" data-aos-duration="1000" alt='Logo Keralty' src={logo} ></img>
             <h3 data-aos="fade-right" data-aos-duration="1500" className=' text-second text-center font-rubik lg:text-2xl md:text-[20px]'>Promovemos o bem-estar de paciente em cuidados paliativos com muito amor, carinho e dedicação</h3>

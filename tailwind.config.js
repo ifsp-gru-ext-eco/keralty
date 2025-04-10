@@ -14,6 +14,9 @@ module.exports = {
       fontFamily: {
         rubik: ['Rubik', 'sans-serif'],
       },
+      height:{
+        'home': 'calc(100vh)'
+      }
     },
   },
   plugins: [],

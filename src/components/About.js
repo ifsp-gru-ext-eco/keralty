@@ -22,7 +22,7 @@ function About() {
           Nossos voluntários atuam levando conforto, arte e música a hospitais e
           lares de idosos, criando uma rede de carinho e apoio.
         </p>
-        <a href="https://www.atados.com.br/ong/associacao-keralty" rel="noreferrer" target="_blank"><button className="bg-primary text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
+        <a href="/keralty/about"><button className="bg-primary text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
           Saiba Mais
         </button></a>
       </div>

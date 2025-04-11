@@ -18,7 +18,7 @@ function StepByStep() {
   ];
 
   return (
-    <div className="w-full py-20 px-6 bg-third flex flex-col items-center">
+    <div className="w-full py-20 px-6 bg-third flex flex-col items-center" id="StepByStep">
       <h2 className="text-5xl text-white font-bold mb-10 text-center">Como Participar</h2>
       <div className="flex flex-col md:flex-row gap-10 max-w-5xl w-full">
         {steps.map((step, index) => (

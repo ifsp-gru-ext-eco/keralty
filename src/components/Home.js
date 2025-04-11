@@ -22,11 +22,10 @@ function Home() {
                     <Initial />
                     <SignUp />
                     <CurrentCampaign />
-                    {/* <div className="bg-blue-500 h-home flex items-center justify-center text-white text-4xl">Slide 3</div> */}
                 </Carousel>
-            <StepByStep />
+            <StepByStep/>
             <Cards />
-            <About id="about" />
+            <About/>
             <ContactSection id="contact" />
         </div>
     );

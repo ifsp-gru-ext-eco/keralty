@@ -10,7 +10,7 @@ function Cards() {
         AOS.init();
     }, [])
     return (
-        <div className="flex justify-evenly lg:flex-row flex-col items-center bg-primary p-8">
+        <div className="flex justify-evenly lg:flex-row flex-col items-center bg-primary p-8" id="Iniciativas">
             <div className="flex flex-col p-5 justify-around items-center border rounded border-white flex-1 lg:min-h-[400px]" data-aos="fade-right" data-aos-duration="1500">
                 <div className="flex flex-col justify-around items-center text-center">
                     <FiMail className="text-white w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32" />

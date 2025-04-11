@@ -34,7 +34,7 @@ const Carousel = ({ children }) => {
         ))}
       </div>
 
-      <div className="top-0 md:h-home h-full w-full justify-between items-center flex text-white px-10 text-3xl absolute z-20 pointer-events-none">
+      <div className="top-0 md:h-home h-full w-full justify-between items-center flex text-white px-10 text-3xl absolute z-9 pointer-events-none">
         <button onClick={previousSlide} className="pointer-events-auto">
           <BsFillArrowLeftCircleFill className="text-gray-500" />
         </button>

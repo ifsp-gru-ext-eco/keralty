@@ -9,6 +9,8 @@ import Carousel from './Carousel.js';
 import SignUp from "./Childrens/SignUp.js";
 import ContactSection from './ContactSection.js';
 import Initial from "./Childrens/Initial.js";
+import CurrentCampaign from "./Childrens/CurrentCampaign.js";
+import StepByStep from "./StepByStep.js";
 function Home() {
     useEffect(() => {
         AOS.init();
@@ -19,10 +21,10 @@ function Home() {
             <Carousel>
                     <Initial />
                     <SignUp />
-                    
-                    <div className="bg-blue-500 h-home flex items-center justify-center text-white text-4xl">Slide 3</div>
+                    <CurrentCampaign />
+                    {/* <div className="bg-blue-500 h-home flex items-center justify-center text-white text-4xl">Slide 3</div> */}
                 </Carousel>
-
+            <StepByStep />
             <Cards />
             <About id="about" />
             <ContactSection id="contact" />
